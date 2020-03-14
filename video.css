@@ -1,0 +1,33 @@
+button {
+  display      : inline-block;
+  border-radius: 50%;                  
+  box-shadow   : 6px 6px 3px #666666;  
+  cursor       : pointer;
+  transition   : .3s;
+  background-color: black;
+  color        : white; 
+}
+button:hover {
+  box-shadow   : none;                
+  border-radius: 89%;                    
+}
+
+
+#mic {
+	position:		relative;
+}
+#mic .caption {
+	text-align: 		center;
+	color:			#fff;
+}
+#mic .mask {
+  position:		absolute;
+  padding-top: 30px;
+  padding-left: 20px;
+	opacity:		0;	
+	background-color:	rgba(0,0,0,0.4);
+
+}
+#mic:hover .mask {
+	opacity:		1;
+}

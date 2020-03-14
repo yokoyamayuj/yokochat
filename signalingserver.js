@@ -2,7 +2,7 @@
 
 var srv = require('http').Server();
 var io = require('socket.io')(srv);
-var port = 3002;
+var port = 3001;
 srv.listen(port);
 console.log('signaling server started on port:' + port);
 
