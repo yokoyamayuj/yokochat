@@ -59,6 +59,15 @@ io.on('connection', function(socket) {
         emitMessage('message', message);
     });
 
+    socket.on('audioText', function(message) {
+      var date = new Date();
+   
+      console.log('audioTexst');
+      console.log(message);
+      
+      // broadcast in room
+      emitMessage('audioText', message);
+  });
     // When the user hangs up
     // broadcast bye signal to all users in the room
     socket.on('disconnect', function() {

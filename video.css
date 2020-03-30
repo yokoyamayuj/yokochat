@@ -13,11 +13,20 @@ button:hover {
 }
 
 video[id*='remote']{
-  width: 100%;
+  width: 75%;
   height: 100%;
+  float: left;
 }
 
+.remote{
+  color: cornflowerblue;
+}
 
+#messages{
+  width: 20%;
+  float: right;
+  font-size: x-small;
+}
 
 #mic {
 	position:		relative;
