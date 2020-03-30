@@ -36,6 +36,10 @@
   &nbsp;
   <button type="button" onclick="connect();">Connect</button>
   <button type="button" onclick="hangUp();">Hang Up</button> 
+  <button id="start-text">text on</button>
+  <button id="stop-text">text of</button>
+
+  <div id="result-div"></div>
   <div>
     <video id="local_video" autoplay style="width: 160px; height: 120px; "></video>
   </div>
@@ -43,6 +47,7 @@
   </div>
   <script src='video.js'></script>
   <script src='signaling.js'></script>
+  <script src='audioToText.js'></script>  
   <link rel='stylesheet' type='text/css' href='video.css' />  
 </body>
 </html>

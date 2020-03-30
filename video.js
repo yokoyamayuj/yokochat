@@ -54,7 +54,6 @@ function createVideoElement(elementId) {
 
     let video = document.createElement('video');
     video.id = elementId;
-
     container.appendChild(video);
 
     return video;
