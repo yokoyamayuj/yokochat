@@ -104,6 +104,7 @@ function isReadyToConnect() {
     return true;
   }
   else {
+    alert('先にカメラを接続してください。');
     return false;
   }
 }

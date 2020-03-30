@@ -4,6 +4,7 @@
  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
  <title>yoko  Chan</title>
  <script src="http://localhost:3001/socket.io/socket.io.js"></script>
+ <script src="jquery-3.4.1.min.js"></script>
 
  <script>
    function _assert(desc, v) {
@@ -36,17 +37,21 @@
   &nbsp;
   <button type="button" onclick="connect();">Connect</button>
   <button type="button" onclick="hangUp();">Hang Up</button> 
-  <button id="start-text">text on</button>
-  <button id="stop-text">text of</button>
+  <button id="start-text">音声認識 on</button>
+  <button id="stop-text">音声認識 of</button>
 
   <video id="local_video" autoplay style="width: 160px; height: 120px; "></video>
   <div id="container">
   </div>
   <div id="result-div"></div>
 
+
+  <ul id="messages"></ul>
+<!--  <input id='m' type='buttuon'><button onclick='startChat()'>Send</button>--> 
+  
   <script src='video.js'></script>
   <script src='signaling.js'></script>
-  <script src='audioToText.js'></script>  
+  <script src='audioToText.js'></script> 
   <link rel='stylesheet' type='text/css' href='video.css' />  
 
 </body>
