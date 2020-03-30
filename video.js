@@ -70,7 +70,7 @@ function removeVideoElement(elementId) {
 // ---------------------- media handling ----------------------- 
 // start local video
 function startVideo() {
-    getDeviceStream({ video: true, audio: false }) 
+    getDeviceStream({ video: true, audio: true }) 
         .then(function (stream) { // success
             localStream = stream;
             playVideo(localVideo, stream);
@@ -78,7 +78,7 @@ function startVideo() {
 }
 
 function startScreenShare() {
-    getScreenStream({ video: true, audio: false })
+    getScreenStream({ video: true, audio: true })
         .then(function (stream) { // success
             localStream = stream;
             playVideo(localVideo, stream);
